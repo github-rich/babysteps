@@ -9,18 +9,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
 </head>
-<header>
-    <nav class="navbar">
-        <ul class="nav-links">
-            <li><a href="/about" {% if page.title == "About" %}class="active-page"{% endif %}>About</a></li>
-        </ul>
-    </nav>
-</header>
 <body class="Site {{ page.layout }}-page"> <!-- Keeps the footer down! -->
-    <main class="snow">
-        {{ content }}
+    <header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="/about" {% if page.title == "About" %}class="active-page"{% endif %}>About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="snow-body">
+        <div class="snow-container">
+            <span class="snow-fit-text">{{content}}</span>
+        </div>
     </main>
-
     <div class="push"></div>
         <footer class="footer">
         <p class="footer-links">Created and maintained by <a href=mailto:"{{site.email}}" class="highlight">Rich</a> aka Dairyman<br>

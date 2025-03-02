@@ -10,23 +10,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
 </head>
-<header>
-    <nav class="navbar">
-        <ul class="nav-links">
-            <li><a href="/about" {% if page.title == "About" %}class="active-page"{% endif %}>About</a></li>
-        </ul>
-    </nav>
-    <h1 class="header_site_title">{{ site.title }}</h1>
-</header>
-
 <body class="Site {{ page.layout }}-page"> <!-- Keeps the footer down! -->
-
+    <header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="/about" {% if page.title == "About" %}class="active-page"{% endif %}>About</a></li>
+            </ul>
+        </nav>
+        <h1 class="header_site_title">{{ site.title }}</h1>
+    </header>
     <main class="site-content">
         {{ content }}
     </main>
-
     <div class="push"></div>
-
     <footer class="footer">
         <p class="footer-links">Created and maintained by <a href=mailto:"{{site.email}}">Rich</a> aka Dairyman<br>
             &copy; {{ site.title }} {{ "now" | date: "%Y" }}
