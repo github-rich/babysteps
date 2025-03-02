@@ -1,0 +1,24 @@
+blockquote {
+    background: #9BC0E3;
+    border-left: 10px solid #5A7FA2;
+    font-style: italic;
+    font-weight: 600;
+    margin: 1.5em 5em;
+    padding: 0.5em 10px;
+    border-radius: 3px;
+     /* The quotes property is not necessary unless you are using ::before and ::after pseudo-elements to add quotation marks */
+   quotes: "\201C""\201D""\2018""\2019";
+  }
+/* Leading quote mark
+  blockquote:before {
+    color: #5A7FA2;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+  }
+*/
+blockquote p {
+  display: inline; /* This makes paragraphs inside blockquotes display as inline elements */
+}

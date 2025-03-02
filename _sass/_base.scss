@@ -1,0 +1,72 @@
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.snow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #9BC0E3;
+  font-family: 'Tangerine', cursive;
+  font-size: 5rem;
+  color: #5A7FA2;
+}
+
+main {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    color: #404040;
+    font: 400 1em / 1.4 'Open Sans', sans-serif;
+}
+
+.Site {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.site-content {
+    margin: 1em;
+    flex: 1;
+}
+
+p {
+    margin: 1em 0; /* Ensure paragraphs have a margin */
+}
+
+/* unvisited link */
+a:link {
+    color: #5A7FA2;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: #5A7FA2;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: hotpink;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* selected link */
+  a:active {
+    color: hotpink;
+    text-decoration: none;
+    font-weight: bolder;
+  }
+

@@ -1,0 +1,49 @@
+header {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+    background-color: #9BC0E3; 
+    color: #5A7FA2;
+    text-align: center;
+    padding: 1rem 0; /* Padding to make the navbar a few lines high */
+  }
+  
+  .navbar .nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    border-radius: 4px
+  }
+  
+  .navbar .nav-links li {
+    margin: 0 1rem;
+  }
+  
+  .navbar .nav-links a {
+    color: #5A7FA2;
+    text-decoration: none;
+  }
+  
+  .navbar .nav-links a.active-page {
+    font-weight: bold;
+  }
+
+  .navbar .nav-links a:hover {
+    color: white;
+    text-decoration: none;
+  }
+
+.header_site_title {
+    color: #5A7FA2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Tangerine', cursive;
+    font-size: 5rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+}

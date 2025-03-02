@@ -1,0 +1,50 @@
+// Define the card container class
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem; // Space between cards
+  
+    .card {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #E0E0E0;
+      border-radius: 0.5rem;
+      overflow: hidden; // Ensures the border radius is applied
+  
+      .card-figure {
+        overflow: hidden;
+        background-color: #E0E0E0;
+  
+        img {
+          width: 100%;
+          height: auto; // Maintain aspect ratio
+        }
+      }
+  
+      .card-body {
+        flex: 1;
+        padding: 1rem;
+        border-top: 1px solid #E0E0E0;
+  
+        .card-title {
+          font-size: 1.2rem;
+          margin-bottom: 0.2rem;
+        }
+  
+        .card-text {
+          font-size: 1rem;
+        }
+  
+        .card-link {
+          color: #007BFF;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .container {
+    margin: 10px auto;
+    max-width: 600px;
+    text-align: center;
+  }
