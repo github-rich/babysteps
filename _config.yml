@@ -63,7 +63,7 @@ defaults:
     values:
       is_post: true
       layout: post
-      permalink: /blog/:categories/:title/
+      permalink: pretty
   -
     scope:
       type: pages

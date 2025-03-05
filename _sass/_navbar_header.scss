@@ -11,10 +11,11 @@ header {
   padding: 1rem 0;
 }
 
-.header-site-title {
+.blog-title {
   color: white;
+  font-size: clamp(1.5rem, 5vw, 3rem);
   font-weight: bold;
-  font-size: 36px;
+  text-align: center;
   margin-left: 1rem;
 }
 
